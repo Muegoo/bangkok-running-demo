@@ -1,0 +1,13 @@
+{
+  "name": "bangkok-running-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "OpenStreetMap-to-Roblox park scene pipeline and running prototype",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node tests/geometry.mjs && node scripts/verify-portfolio.mjs",
+    "build": "node scripts/build-lumphini-loop-demo.mjs --network data/processed/lumphini-strava-layout.geojson --output demo/LumphiniStravaLayout.rbxlx --prefix lumphini-strava --overview",
+    "validate": "node scripts/validate-lumphini-strava.mjs"
+  }
+}

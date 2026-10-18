@@ -1,0 +1,86 @@
+{
+  "builtAt": "2026-10-17T10:52:52.421Z",
+  "artifact": "demo/LumphiniStravaLayout.rbxlx",
+  "status": "VISUAL MATCH — approximate; not a GPX trace",
+  "lengthMeters": 2591.87,
+  "partCount": 7074,
+  "sha256": "06e5c7cdd21986575ac1419c5c44f9724cfaf8f39ab0cc7c11d3e2a73d1f0de3",
+  "scenery": {
+    "sourceWay": "loop-candidate",
+    "centerlineMeters": 2591.9,
+    "roadWidthMeters": 6,
+    "decorativeTrees": 340,
+    "streetLamps": 149,
+    "decorativeProps": 6007,
+    "runners": 6,
+    "classification": "Original artistic dressing; prop positions and road width are not a site survey.",
+    "treeAssetId": "97751303071750",
+    "treeGeometry": "Original generated tropical tree mesh, instanced with varied scale and heading",
+    "routeNetwork": {
+      "createdAt": "2026-10-17T10:48:29.846Z",
+      "scope": "Main park running loop plus interior heart-shaped loop; excludes the surrounding street circuit.",
+      "userSelection": "Both outer and inner park loops",
+      "uniqueNetworkMeters": 3276.06,
+      "reference": "data/reference/lumphini-strava-user.png",
+      "accuracy": "Visual alignment to OSM; source screenshot is not georeferenced GPX and provides no numeric activity counts.",
+      "checkpointsWgs84": [
+        [
+          100.5388425,
+          13.7303138
+        ],
+        [
+          100.5411009,
+          13.7310125
+        ],
+        [
+          100.5417254,
+          13.730915
+        ],
+        [
+          100.5426,
+          13.7293
+        ],
+        [
+          100.5418466,
+          13.7285489
+        ]
+      ],
+      "attribution": "© OpenStreetMap contributors",
+      "license": "ODbL-1.0"
+    },
+    "routeLengths": [
+      {
+        "id": "MainLoop",
+        "lengthMeters": 2591.87
+      },
+      {
+        "id": "InnerConnector",
+        "lengthMeters": 684.19
+      },
+      {
+        "id": "InnerLoop",
+        "lengthMeters": 1084.22
+      }
+    ],
+    "sourceWays": [
+      "way/32004270",
+      "way/1193581785",
+      "way/1193581786",
+      "way/28326260",
+      "way/293718035",
+      "way/145574792",
+      "way/31991813",
+      "way/31991814",
+      "way/27135938",
+      "way/1018494914",
+      "way/32004262",
+      "way/32004174",
+      "way/1192725584",
+      "way/145574775"
+    ],
+    "routeStatus": "VISUAL MATCH — approximate; not a GPX trace"
+  },
+  "scope": "Main and inner park running circuits; surrounding streets excluded.",
+  "geometrySource": "OSM vertices; visually selected from the user-supplied Strava screenshot. No Strava GPS/API data.",
+  "googleUse": "Official viewer inspected only. No Google imagery, textures, mesh assets, or traced object positions embedded."
+}

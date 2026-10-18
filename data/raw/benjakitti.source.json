@@ -1,0 +1,15 @@
+{
+  "id": "benjakitti",
+  "name": "สวนเบญจกิติ",
+  "bbox": [
+    13.722,
+    100.547,
+    13.737,
+    100.563
+  ],
+  "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=100.547,13.722,100.563,13.737",
+  "fetchedAt": "2026-10-15T15:09:06.948Z",
+  "license": "ODbL-1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "copyrightUrl": "https://www.openstreetmap.org/copyright"
+}

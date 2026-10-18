@@ -1,0 +1,15 @@
+{
+  "assetId": "132885454915151",
+  "generationId": "766e5e86-ab65-4181-b186-2e664fd43bc5",
+  "source": "Original Roblox Studio text-only mesh generation; no Google imagery or geometry supplied.",
+  "bounds": [19.311664581298829, 37.99906921386719, 19.295127868652345],
+  "parts": [{
+    "name": "body_geom",
+    "meshId": "rbxassetid://105570352789820",
+    "textureId": "rbxassetid://99639140504313",
+    "size": [19.311901092529298, 38, 19.295129776000978],
+    "meshSize": [19.311901092529298, 38, 19.295129776000978],
+    "relativeCFrame": [-0.000118255615234375, 19, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1],
+    "doubleSided": false
+  }]
+}

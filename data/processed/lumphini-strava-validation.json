@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-18T17:45:36.740Z",
+  "status": "passed_osm_topology_and_artifact_checks",
+  "artifact": "demo/LumphiniStravaLayout.rbxlx",
+  "partCount": 7074,
+  "treeMeshParts": 680,
+  "routes": [
+    {
+      "id": "MainLoop",
+      "meters": 2591.87
+    },
+    {
+      "id": "InnerConnector",
+      "meters": 684.19
+    },
+    {
+      "id": "InnerLoop",
+      "meters": 1084.22
+    }
+  ],
+  "connectorJoinsMainAtBothEnds": true,
+  "stravaInput": "User-supplied screenshot; visually matched, not a georeferenced GPS trace",
+  "limits": "Does not certify GPS accuracy, numeric popularity, full-lap playability, or mobile performance."
+}

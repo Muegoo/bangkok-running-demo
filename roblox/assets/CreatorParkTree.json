@@ -1,0 +1,97 @@
+{
+  "assetId": "6020696518",
+  "source": "Free Creator Store model; inspected in Edit mode, no scripts included",
+  "creator": "Adrijan0830",
+  "url": "https://create.roblox.com/store/asset/6020696518",
+  "bounds": [
+    27.804157257080078,
+    52.69088363647461,
+    32.76478958129883
+  ],
+  "parts": [
+    {
+      "surface": {
+        "colorMap": "rbxassetid://6020541919",
+        "normalMap": "rbxassetid://6020541673",
+        "roughnessMap": "rbxassetid://6020541786",
+        "alphaMode": 1,
+        "metalnessMap": ""
+      },
+      "color": [
+        163.00000548362732,
+        162.00000554323196,
+        165.00000536441803
+      ],
+      "meshId": "rbxassetid://6020568600",
+      "textureId": "rbxassetid://6020568650",
+      "relativeCFrame": [
+        -0.000244140625,
+        27.69088363647461,
+        -0.00048828125,
+        0.7800940871238708,
+        0,
+        0.6256622672080994,
+        0,
+        1,
+        0,
+        -0.6256622672080994,
+        0,
+        0.7800940871238708
+      ],
+      "name": "leaves",
+      "meshSize": [
+        27.804157257080078,
+        50.000003814697266,
+        32.765586853027344
+      ],
+      "doubleSided": true,
+      "size": [
+        27.804157257080078,
+        50.000003814697266,
+        32.765586853027344
+      ]
+    },
+    {
+      "surface": {
+        "colorMap": "rbxassetid://6020690281",
+        "normalMap": "rbxassetid://6020690425",
+        "roughnessMap": "rbxassetid://6020691076",
+        "alphaMode": 0,
+        "metalnessMap": "rbxassetid://6020690342"
+      },
+      "color": [
+        163.00000548362732,
+        162.00000554323196,
+        165.00000536441803
+      ],
+      "meshId": "rbxassetid://6020620129",
+      "textureId": "rbxassetid://6020620208",
+      "relativeCFrame": [
+        2.6607666015625,
+        24.20067024230957,
+        -0.1690673828125,
+        0.7800940871238708,
+        0,
+        0.6256622672080994,
+        0,
+        1,
+        0,
+        -0.6256622672080994,
+        0,
+        0.7800940871238708
+      ],
+      "name": "trunk",
+      "meshSize": [
+        0.4695180654525757,
+        5.631344795227051,
+        0.46870100498199463
+      ],
+      "doubleSided": true,
+      "size": [
+        7.699518203735352,
+        48.40134048461914,
+        7.718700885772705
+      ]
+    }
+  ]
+}

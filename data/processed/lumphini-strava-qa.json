@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-17T10:53:20.198Z",
+  "status": "passed_prototype_native_floor_mesh_and_gameplay_checks",
+  "studio": "LumphiniStravaLayout.rbxlx",
+  "input": "User-supplied Strava screenshot; both park loops selected by user",
+  "geometrySource": "OpenStreetMap connected pedestrian paths; visual matching only",
+  "native": {
+    "invalidMeshSizes": [],
+    "routes": {
+      "InnerConnectorRoute": {
+        "sampled": 149,
+        "nonAsphaltHits": [],
+        "hits": {
+          "RunAsphalt": 149
+        }
+      },
+      "Waypoints": {
+        "sampled": 580,
+        "nonAsphaltHits": [],
+        "hits": {
+          "RunAsphalt": 580
+        }
+      }
+    },
+    "partCount": 7074,
+    "meshCount": 680
+  },
+  "gameplay": {
+    "seconds": 3,
+    "head": 1,
+    "mainLoop": 2591.87,
+    "distance": 30,
+    "hud": {
+      "1": "สวนลุมพินี · เส้นทางทดลอง",
+      "2": "30 ม.   00:03",
+      "3": "วงใหญ่ 2.59 กม. · วงใน 1.08 กม.",
+      "4": "WASD วิ่ง · ลากเมาส์ขวาเพื่อมอง · V เปลี่ยนมุมมอง\nMap data © OpenStreetMap contributors · ODbL"
+    },
+    "health": 100,
+    "speed": 20,
+    "innerLoop": 1084.22,
+    "firstPerson": true
+  },
+  "deviceSimulatorReset": true,
+  "finalMode": "Edit",
+  "view": "North-up overview in daylight",
+  "limitations": [
+    "No georeferenced GPX was supplied; visual correspondence and lap distances are approximate.",
+    "No numeric Strava activity counts accessed.",
+    "No full-lap human playtest or mobile benchmark.",
+    "Final export camera tilt adjusted after gameplay test; road and gameplay geometry unchanged."
+  ],
+  "artifactSha256": "06e5c7cdd21986575ac1419c5c44f9724cfaf8f39ab0cc7c11d3e2a73d1f0de3"
+}

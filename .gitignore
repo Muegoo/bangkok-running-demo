@@ -1,0 +1,7 @@
+.cache/
+node_modules/
+data/reference/
+*.lock
+*.log
+.DS_Store
+demo/*backup*

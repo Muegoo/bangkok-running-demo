@@ -1,0 +1,15 @@
+{
+  "id": "lumphini",
+  "name": "สวนลุมพินี",
+  "bbox": [
+    13.7235,
+    100.5345,
+    13.7365,
+    100.5475
+  ],
+  "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=100.5345,13.7235,100.5475,13.7365",
+  "fetchedAt": "2026-10-15T15:09:02.992Z",
+  "license": "ODbL-1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "copyrightUrl": "https://www.openstreetmap.org/copyright"
+}

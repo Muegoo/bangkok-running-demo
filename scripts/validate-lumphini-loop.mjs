@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import {readFile,writeFile} from 'node:fs/promises';
+import {project,distance} from './geometry.mjs';
+const route=JSON.parse(await readFile('data/processed/lumphini-loop-candidate.geojson','utf8'));
+const geo=JSON.parse(await readFile('data/processed/lumphini.geojson','utf8'));
+const cfg=JSON.parse(await readFile('data/processed/park-config.json','utf8')).parks.lumphini;
+const scene=JSON.parse(await readFile('data/processed/lumphini-loop-scene.json','utf8'));
+const build=JSON.parse(await readFile('data/processed/lumphini-loop-build.json','utf8'));
+const coords=route.geometry.coordinates,key=p=>p.map(n=>n.toFixed(7)).join(','),edge=(a,b)=>[key(a),key(b)].sort().join('|');
+assert.deepEqual(coords[0],coords.at(-1));
+assert.equal(new Set(coords.slice(0,-1).map(key)).size,coords.length-1,'Repeated route vertex');
+assert.ok(coords.flat().every(Number.isFinite));
+const sources=new Set(route.properties.sourceWays),edges=new Set();
+for(const f of geo.features.filter(f=>sources.has(f.id))){
+ assert.ok(['pedestrian','footway','path','service','track'].includes(f.properties.highway));
+ assert.notEqual(f.properties.foot,'no');assert.ok(!['no','private'].includes(f.properties.access));
+ for(const line of f.geometry.coordinates)for(let i=1;i<line.length;i++)edges.add(edge(line[i-1],line[i]));
+}
+for(let i=1;i<coords.length;i++)assert.ok(edges.has(edge(coords[i-1],coords[i])),'Route edge is not from an eligible source way');
+const length=coords.slice(1).reduce((sum,p,i)=>sum+distance(project(p,cfg.originWgs84),project(coords[i],cfg.originWgs84)),0);
+assert.ok(Math.abs(length-route.properties.lengthMeters)<.01);
+assert.ok(Math.hypot(...scene.waypoints[0].map((n,i)=>n-scene.waypoints.at(-1)[i]))<.001,'Scene route must close');
+const xml=await readFile('demo/LumphiniLoopCandidate.rbxlx','utf8');
+assert.equal((xml.match(/class="(?:Part|MeshPart)"/g)||[]).length+1,build.partCount);
+const meshes=scene.parts.filter(p=>p.className==='MeshPart');
+assert.equal((xml.match(/<Vector3 name="InitialSize">/g)||[]).length,meshes.length,'MeshPart must serialize its original dimensions as InitialSize');
+assert.ok(!xml.includes('<Vector3 name="MeshSize">'),'MeshSize is a read-only API name, not its serialized property');
+assert.ok(meshes.every(p=>p.meshSize.length===3&&p.meshSize.every(n=>Number.isFinite(n)&&n>0)));
+assert.ok(!/NaN|Infinity|googleusercontent|streetviewpixels/.test(xml));
+assert.ok(!xml.includes('<string name="Name">benjakitti</string>'));
+const report={checkedAt:new Date().toISOString(),status:'passed_geometry_and_artifact_checks',lengthMeters:+length.toFixed(2),routeEdges:coords.length-1,eligibleSourceWays:sources.size,partCount:build.partCount,loopCloses:true,stravaVerification:'not measured — course selection uses public running-route references; no Strava data imported',scope:'Checks source provenance, public pedestrian access tags, simple closed cycle, finite coordinates and XML integrity; does not certify route popularity or surveyed dimensions.'};
+await writeFile('data/processed/lumphini-loop-validation.json',JSON.stringify(report,null,2));
+console.log(JSON.stringify(report,null,2));

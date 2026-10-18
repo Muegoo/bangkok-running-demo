@@ -1,0 +1,130 @@
+{
+  "createdAt": "2026-10-17T08:11:56.155Z",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL-1.0",
+  "studsPerMeter": 2,
+  "partCount": 12874,
+  "limitations": [
+    "Flat terrain and paths: bridge/elevation tags retained in GeoJSON but not reproduced vertically.",
+    "Mapped path network includes cycling and service ways; not a verified running course or lap distance.",
+    "Widths default to 2.5/3/5 m when missing; building heights default to 6 m or 3 m per tagged level.",
+    "Roblox surface edges use 3–5 m grid approximations; GeoJSON and SVG retain original vector detail.",
+    "Scenic 420 m sections use original decorative trees/lights/runners. Prop positions and 6 m road width are artistic assumptions, not site surveys.",
+    "Live Studio MCP verification, when available, is recorded separately in data/processed/studio-qa.json."
+  ],
+  "scenery": {
+    "lumphini": {
+      "sourceWay": 32004270,
+      "centerlineMeters": 420,
+      "roadWidthMeters": 6,
+      "decorativeTrees": 144,
+      "streetLamps": 19,
+      "decorativeProps": 3106,
+      "runners": 6,
+      "classification": "Original artistic dressing; prop positions and road width are not a site survey."
+    },
+    "benjakitti": {
+      "sourceWay": 1307866444,
+      "centerlineMeters": 420,
+      "roadWidthMeters": 6,
+      "decorativeTrees": 88,
+      "streetLamps": 19,
+      "decorativeProps": 2429,
+      "runners": 6,
+      "classification": "Original artistic dressing; prop positions and road width are not a site survey."
+    }
+  },
+  "parks": [
+    {
+      "id": "lumphini",
+      "name": "สวนลุมพินี",
+      "boundaryIds": [
+        23483299
+      ],
+      "originWgs84": [
+        100.54165085,
+        13.7304754
+      ],
+      "extentMeters": [
+        -433.2526290162081,
+        -416.9704313678084,
+        433.2526290177431,
+        416.97043136761084
+      ],
+      "stats": {
+        "boundaryWays": 1,
+        "pathWays": 123,
+        "pedestrianPathWays": 100,
+        "pedestrianNetworkMeters": 9776,
+        "waterFeatures": 11,
+        "buildingFootprints": 51,
+        "mappedTrees": 46,
+        "pointsOfInterest": 75,
+        "bridgeTaggedPathWays": 14
+      },
+      "source": {
+        "id": "lumphini",
+        "name": "สวนลุมพินี",
+        "bbox": [
+          13.7235,
+          100.5345,
+          13.7365,
+          100.5475
+        ],
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=100.5345,13.7235,100.5475,13.7365",
+        "fetchedAt": "2026-10-15T15:09:02.992Z",
+        "license": "ODbL-1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "copyrightUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "warnings": [
+        "Water relation 16357767: incomplete geometry; use standalone closed water ways if available."
+      ]
+    },
+    {
+      "id": "benjakitti",
+      "name": "สวนเบญจกิติ",
+      "boundaryIds": [
+        864170465,
+        1306732424
+      ],
+      "originWgs84": [
+        100.55602715,
+        13.7295625
+      ],
+      "extentMeters": [
+        -450.41835676468446,
+        -479.22855679044636,
+        450.41835676314946,
+        479.22855679044636
+      ],
+      "stats": {
+        "boundaryWays": 2,
+        "pathWays": 341,
+        "pedestrianPathWays": 314,
+        "pedestrianNetworkMeters": 26335,
+        "waterFeatures": 12,
+        "buildingFootprints": 32,
+        "mappedTrees": 105,
+        "pointsOfInterest": 71,
+        "bridgeTaggedPathWays": 76
+      },
+      "source": {
+        "id": "benjakitti",
+        "name": "สวนเบญจกิติ",
+        "bbox": [
+          13.722,
+          100.547,
+          13.737,
+          100.563
+        ],
+        "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=100.547,13.722,100.563,13.737",
+        "fetchedAt": "2026-10-15T15:09:06.948Z",
+        "license": "ODbL-1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "copyrightUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "warnings": []
+    }
+  ]
+}

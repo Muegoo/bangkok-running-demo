@@ -1,0 +1,22 @@
+{
+  "purpose": "Select the established park running circuit, including its interior lake-side bend and east-west diagonal, on the OSM pedestrian graph.",
+  "method": "Manually selected coarse checkpoints; shortest connected public pedestrian paths between them. All exported route vertices come from OSM, not the reference map.",
+  "references": [
+    "https://webportal.bangkok.go.th/cpud/page/sub/27622/-/1/info/428812",
+    "https://cpudgiportal.bangkok.go.th/portal/apps/webappviewer/index.html?id=1d9c4bb0b73a4f9f96769485f5fd3443",
+    "https://www.wongnai.com/articles/lumphini-park",
+    "https://www.thaipbs.or.th/program/KonSuRoak/episodes/113707"
+  ],
+  "checkpointsWgs84": [
+    [100.5393, 13.72985],
+    [100.5415, 13.72856],
+    [100.54383, 13.72723],
+    [100.54479, 13.73248],
+    [100.54234, 13.73160],
+    [100.54159, 13.73175],
+    [100.54143, 13.73327],
+    [100.53949, 13.73400],
+    [100.53876, 13.73065]
+  ],
+  "popularity": "Qualitative published running-route references only; no Strava or other aggregated runner-count data."
+}
